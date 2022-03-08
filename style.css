@@ -46,7 +46,7 @@ header {
 
 .app-header .app-header__images img {
     position: relative;
-    object-fit: fill;
+    object-fit: cover;
 }
 
 .app-header .app-header__navigation{
@@ -129,7 +129,7 @@ header .search .fa-search {
 }
 
 main {
-    margin-top: 60px;
+    margin-top: 100px;
 }
 
 /*CSS SINGLE PAGE*/
@@ -147,7 +147,7 @@ main {
     position: relative;
     width: 1270px;
     height: 720px;
-    object-fit: fill;
+    object-fit: cover;
 }
 
 .single-page .single-page__title {
@@ -246,16 +246,14 @@ main {
     height: 500px;
 }
 
-.app-card-primary .app-card-primary__container .app-card-primary__images img {
+.app-card-primary .app-card-primary__container .app-card-primary__images .fit_images {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
-    object-fit: fill;
+    object-fit: cover;
     width: 100%;
     height: 100%;
-    min-height: 100%;
-    min-width: 100%;
 }
 
 .app-card-primary .app-card-primary__container .app-card-primary__images a {
@@ -264,16 +262,15 @@ main {
     font-weight: bold;
 }
 
-.app-card-primary .app-card-primary__container .app-card-primary__images .app-card-primary__background {
-    padding: 20px;
-}
-
 .app-card-primary .app-card-primary__container .app-card-primary__images .app-card-primary__background h3 {
+    width: 100%;
+    padding: 40px;
+    top: 390px;
     position: absolute;
-    top: 450px;
     font-size: 26px;
     color: white;
-    background: black;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,165,0,0) 100%);
 }
 
 .app-card-primary .app-card-primary__container .app-card-primary__images .app-card-primary__background a {
@@ -338,7 +335,7 @@ main {
 
 .app-card-secondary .app-card-secondary__container .app-card-secondary__images img {
     position: relative;
-    object-fit: fill;
+    object-fit: cover;
 }
 
 .category {
@@ -398,13 +395,13 @@ main {
 
 .app-card-allpost .app-card-allpost__images {
     position: relative;
-    object-fit: fill;
+    object-fit: cover;
 }
 
 .app-card-allpost .app-card-allpost__images img {
     width: 600px;
     height: 300px;
-    object-fit: fill;
+    object-fit: cover;
 }
 
 .app-card-allpost .app-card-allpost__box {
@@ -471,6 +468,7 @@ main {
     height: 380px;
     margin-bottom: 5px;
 }
+
 .post-highlight .post-thumbnail {
     height: 350px;
     position: relative;
@@ -478,6 +476,7 @@ main {
     margin: auto;
     overflow: hidden;
 }
+
 .post-highlight .post-thumbnail-link {
     position: relative;
     display: block;
